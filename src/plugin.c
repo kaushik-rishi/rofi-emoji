@@ -163,7 +163,7 @@ static ModeMode emoji_mode_result(Mode *sw, int mretv, char **input,
     return RESET_DIALOG;
   } else if (mretv & MENU_CANCEL) {
     event = EXIT;
-  } else if (mretv & MENU_CUSTOM_COMMAND) {
+  } else if (mretv & MENU_CUSTOM_ACTION) {
     if ((mretv & MENU_LOWER_MASK) == 0) {
       event = SELECT_CUSTOM_1;
     } else {
